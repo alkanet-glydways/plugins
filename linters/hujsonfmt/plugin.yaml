@@ -27,6 +27,3 @@ lint:
           batch: true
       known_good_version: 0.0.0-20250226042755-ec1d1c13e8d6
       suggest_if: files_present
-      environment:
-        - name: PATH
-          list: ["${linter}/bin"]
