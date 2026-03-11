@@ -1,0 +1,32 @@
+version: 0.1
+tools:
+  definitions:
+    - name: hujsonfmt
+      runtime: go
+      package: github.com/tailscale/hujson/cmd/hujsonfmt
+      shims: [hujsonfmt]
+      known_good_version: 0.0.0-20250226042755-ec1d1c13e8d6
+lint:
+  files:
+    - name: hujson
+      extensions:
+        - hujson
+  definitions:
+    - name: hujsonfmt
+      tools: [hujsonfmt]
+      files: [hujson]
+      description: A formatter for HuJSON (JSON with comments and trailing commas)
+      commands:
+        - name: format
+          output: rewrite
+          run: hujsonfmt -w ${target}
+          success_codes: [0]
+          cache_results: true
+          formatter: true
+          in_place: true
+          batch: true
+      known_good_version: 0.0.0-20250226042755-ec1d1c13e8d6
+      suggest_if: files_present
+      environment:
+        - name: PATH
+          list: ["${linter}/bin"]

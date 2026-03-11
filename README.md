@@ -59,6 +59,7 @@ trunk check enable {linter}
 | Go              | [gofmt], [gofumpt], [goimports], [gokart], [golangci-lint], [golines], [semgrep]                                                         |
 | GraphQL         | [graphql-schema-linter], [prettier]                                                                                                      |
 | HAML            | [haml-lint]                                                                                                                              |
+| HuJSON          | [hujsonfmt]                                                                                                                              |
 | HTML Templates  | [djlint]                                                                                                                                 |
 | Java            | [google-java-format], [pmd], [semgrep]                                                                                                   |
 | Javascript      | [biome], [deno], [eslint], [prettier], [rome], [semgrep]                                                                                 |
@@ -132,6 +133,7 @@ trunk check enable {linter}
 [graphql-schema-linter]: https://github.com/cjoudrey/graphql-schema-linter#readme
 [hadolint]: https://github.com/hadolint/hadolint#readme
 [haml-lint]: https://github.com/sds/haml-lint#readme
+[hujsonfmt]: https://github.com/tailscale/hujson
 [include-what-you-use]: https://github.com/include-what-you-use/include-what-you-use#readme
 [isort]: https://github.com/PyCQA/isort#readme
 [ktlint]: https://github.com/pinterest/ktlint#readme
