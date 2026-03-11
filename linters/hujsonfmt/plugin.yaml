@@ -5,7 +5,7 @@ tools:
       runtime: go
       package: github.com/tailscale/hujson/cmd/hujsonfmt
       shims: [hujsonfmt]
-      known_good_version: 0.0.0-20250226042755-ec1d1c13e8d6
+      known_good_version: 0.0.1
 lint:
   files:
     - name: hujson
@@ -25,5 +25,5 @@ lint:
           formatter: true
           in_place: true
           batch: true
-      known_good_version: 0.0.0-20250226042755-ec1d1c13e8d6
+      known_good_version: 0.0.1
       suggest_if: files_present
